@@ -43,10 +43,10 @@ app.post('/addBeer', (request, response) => {
 })
 
 //UPDATE
-app.put('/addOneBeer', (request, response) => {
-    db.collection('beer').updateOne({beerName: request.body.beerNameS, beerType: request.body.beerTypeS,likes: request.body.likesS},{
+app.put('/addOneLike', (request, response) => {
+    db.collection('beer').updateOne({beerName: request.body.beerNameS, beerType: request.body.beerTypeS,likes: request.body.beerLikesS},{
         $set: {
-            likes:request.body.likesS + 1
+            likes:request.body.beerLikesS + 1
           }
     },{
         sort: {_id: -1},
