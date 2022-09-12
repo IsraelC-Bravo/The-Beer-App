@@ -1,5 +1,3 @@
-const { json } = require("express");
-
 const deleteText = document.querySelectorAll('.fa-trash');
 const thumbsUp = document.querySelectorAll('.fa-thumbs-up');
 
